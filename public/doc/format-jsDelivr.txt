@@ -5,6 +5,7 @@ https://github.com/dfykrii/public-assets/tree/main/public/images
 
 CDN jsDelivr format:
 https://cdn.jsdelivr.net/gh/dfykrii/public-assets/public/images/<NAMA-FILE>
+https://cdn.jsdelivr.net/gh/dfykrii/public-assets/public/images/2_20250617_125747_0001.png
 
 📝 Cara pakai:
 1. Upload gambar ke folder: public/images/
