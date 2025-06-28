@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>jsDelivr Link Generator</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+    input, button { padding: 8px; margin: 10px 0; width: 100%; font-size: 1rem; }
+    code { background: #f4f4f4; padding: 4px 8px; display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>🔗 jsDelivr Link Generator</h2>
+
+  <label for="filename">Masukkan Nama File (contoh: <code>kucing.webp</code>)</label>
+  <input type="text" id="filename" placeholder="contoh: banner1.webp" />
+
+  <button onclick="generate()">✨ Buat Link</button>
+
+  <h3>📦 Hasil Link CDN:</h3>
+  <code id="output">Belum ada link</code>
+
+  <script>
+    function generate() {
+      const base = "https://cdn.jsdelivr.net/gh/dfykrii/public-assets/public/images/";
+      const filename = document.getElementById("filename").value.trim();
+      const output = document.getElementById("output");
+
+      if (!filename) {
+        output.textContent = "Masukkan nama file dulu bro!";
+        return;
+      }
+
+      output.textContent = base + filename;
+    }
+  </script>
+</body>
+</html>
